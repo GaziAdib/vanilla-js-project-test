@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.min.js"></script>
     <title>Counter Redux App</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <h2 class="text-3xl m-3 text-center p-4 font-bold">Redux Counter App</h2>
-    <hr>
+    <hr />
 
     <div class="root-div">
-        <div class="container text-center p-4 m-3 root-div2">
-            <h4 class="text-4xl text-center font-bold" id="countstate">0</h4>
-    
-            <div class="container text-center">
-                <span>
-                    <button class="p-2 m-2 border increment-btn" id="increment-btn">increment</button>
-                    <button class="p-2 m-2 border decrement-btn" id="decrement-btn">decrement</button>
-                    <button class="p-2 m-2 border add-counter" id="add-counter">Add Counter+</button>
-                </span>
-            </div>
-        </div>
-    </div>
-    
+      <div class="container text-center p-4 m-3 root-div2">
+        <h4 class="text-4xl text-center font-bold countstate">0</h4>
 
+        <div class="container text-center">
+          <span>
+            <button class="p-2 m-2 border increment-btn">increment</button>
+            <button class="p-2 m-2 border decrement-btn">decrement</button>
+            <button class="p-2 m-2 border add-counter">Add Counter+</button>
+          </span>
+        </div>
+      </div>
+    </div>
 
     <script src="./script.js"></script>
-    
-</body>
+  </body>
 </html>
