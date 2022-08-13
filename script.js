@@ -5,10 +5,10 @@ const rootDiv = document.querySelectorAll('.root-div');
 console.log(rootDiv);
 
 
-const countEl = document.getElementById('countstate');
-const incBtn = document.getElementById('increment-btn');
-const decBtn = document.getElementById('decrement-btn');
-const addNewCountBtn = document.getElementById('add-counter');
+const countEl = document.querySelector('.countstate');
+const incBtn = document.querySelector('.increment-btn');
+const decBtn = document.querySelector('.decrement-btn');
+const addNewCountBtn = document.querySelector('.add-counter');
 
 
 // action indentifier
@@ -124,6 +124,7 @@ decBtn.addEventListener('click', () => {
 
 var childDiv = document.createElement('div');
 
+
 childDiv.innerHTML +=`
 <div class="container text-center p-4 m-3 root-div2">
             <h4 class="text-4xl text-center font-bold" id="countstate">0</h4>
@@ -147,7 +148,7 @@ addNewCountBtn.addEventListener('click', () => {
     // }
 
 
-    rootDiv[rootDiv.length-1].appendChild(childDiv);
+    document.body.appendChild(childDiv)
         
 });
 
